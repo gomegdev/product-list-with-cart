@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Add solution URL here](https://github.com/gomegdev/product-list-with-cart)
+- Live Site URL: [Add live site URL here](https://product-list-with-cart-gomeg.netlify.app/)
 
 ## My process
 
@@ -44,7 +44,7 @@ Users should be able to:
 
 - [React](https://reactjs.org/) - JS library
 - [Tailwind CSS](https://tailwindcss.com/) - For styles
-- [Shadcn/ui](https://ui.shadcn.com/) - For components
+- [Shadcn/ui](https://ui.shadcn.com/) - Tailwind CSS Components
 
 ### Useful resources
 
