@@ -35,8 +35,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/gomegdev/product-list-with-cart)
-- Live Site URL: [Add live site URL here](https://product-list-with-cart-gomeg.netlify.app/)
+- Solution URL: [Github](https://github.com/gomegdev/product-list-with-cart)
+- Live Site URL: [Netlify](https://product-list-with-cart-gomeg.netlify.app/)
 
 ## My process
 
