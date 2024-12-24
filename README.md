@@ -31,7 +31,7 @@ Users should be able to:
 
 ### Screenshot
 
-![Desktop Screenshot](../fm-shopping-with-cart/src/assets/images/dessert-store.jpeg)
+![Desktop Screenshot](../dessert-product-list-with-cart/public/images/dessert-store.jpeg)
 
 ### Links
 
