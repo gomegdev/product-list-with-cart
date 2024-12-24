@@ -1,5 +1,6 @@
 import { useContext, useState, useEffect } from 'react';
 import { CartContext } from '../layouts/Layout';
+import { DecrementIcon, IncrementIcon } from '../components/icons';
 import PropTypes from 'prop-types';
 
 const ProductList = ({ desserts }) => {
@@ -86,7 +87,7 @@ const ProductList = ({ desserts }) => {
                   <button
                     className="flex gap-2 w-44 items-center bg-white text-rose900 
                     rounded-full border border-primaryClr 
-                    px-6 py-2 font-semibold absolute -bottom-5"
+                    px-6 py-2 font-semibold absolute -bottom-5 hover:text-primaryClr transition-all"
                     onClick={() => incrementItem(dessert)}
                   >
                     <span>
@@ -98,28 +99,22 @@ const ProductList = ({ desserts }) => {
                     Add to Cart
                   </button>
                 ) : (
-                  <div className="rounded-full border-1 bg-primaryClr w-44 py-2 px-6 absolute -bottom-5 cursor-pointer">
+                  <div className="rounded-full border bg-primaryClr w-44 py-2 px-4 absolute -bottom-5 cursor-pointer">
                     <div className="flex justify-between items-center">
                       <button
-                        className="border border-white rounded-full py-2 px-1"
+                        className="border border-white rounded-full p-1 hover:bg-white group flex items-center justify-center transition-all duration-200"
                         onClick={() => decrementItem(dessert)}
                       >
-                        <img
-                          src="/images/icon-decrement-quantity.svg"
-                          alt="icon decrement quantity"
-                        />
+                        <DecrementIcon className="w-2.5 h-2.5 text-white group-hover:text-primaryClr transition-colors duration-200" />
                       </button>
                       <span className="text-white">
                         {selectedItems[dessert.category]?.quantity || 0}
                       </span>
                       <button
-                        className="border border-white rounded-full py-1 px-1"
+                        className="border border-white rounded-full p-1 hover:bg-white group flex items-center justify-center transition-all duration-200"
                         onClick={() => incrementItem(dessert)}
                       >
-                        <img
-                          src=" /images/icon-increment-quantity.svg"
-                          alt="icon increment quantity"
-                        />
+                        <IncrementIcon className="w-2.5 h-2.5 text-white group-hover:text-primaryClr transition-colors duration-200" />
                       </button>
                     </div>
                   </div>
