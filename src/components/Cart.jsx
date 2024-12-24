@@ -36,7 +36,7 @@ const Cart = () => {
           {cartItemsArray.length === 0 ? (
             <div className="flex flex-col gap-8 justify-center items-center">
               <img
-                src="/src/assets/images/illustration-empty-cart.svg"
+                src="/images/illustration-empty-cart.svg"
                 alt="empty cart icon"
                 className="w-30 h-30"
               />
@@ -74,7 +74,7 @@ const Cart = () => {
                     className="h-fit hover:bg-rose50 transition-colors rounded-full"
                   >
                     <img
-                      src="/src/assets/images/icon-remove-item.svg"
+                      src="/images/icon-remove-item.svg"
                       alt="remove item from cart icon"
                       className="size-5 p-1 rounded-full border hover:border-rose300 transition-all"
                     />
@@ -94,17 +94,14 @@ const Cart = () => {
                 {/* Confirm Order */}
                 <div className="mt-4 flex flex-col gap-4">
                   <div className="flex justify-center py-3 w-full rounded-sm gap-2 bg-rose50">
-                    <img
-                      src="/src/assets/images/icon-carbon-neutral.svg"
-                      alt=""
-                    />
+                    <img src="/images/icon-carbon-neutral.svg" alt="" />
                     <p className="text-sm">
                       This is a <strong>carbon-neutral</strong> delivery.
                     </p>
                   </div>
                   <button
                     onClick={handleConfirmOrder}
-                    className="bg-primaryClr py-3 text-white rounded-full disabled:opacity-50"
+                    className="bg-primaryClr py-3 text-white rounded-full disabled:opacity-50 hover:bg-orange-800 transition-colors duration-300"
                     disabled={cartItemsArray.length === 0}
                   >
                     Confirm Order
@@ -118,11 +115,11 @@ const Cart = () => {
 
       {/* Order Confirmation Dialog */}
       <Dialog open={isOrderConfirmed} onOpenChange={setIsOrderConfirmed}>
-        <DialogContent className="bg-white p-6 w-full lg:w-[500px] rounded-lg font-redHatText">
+        <DialogContent className="bg-white p-6 w-full lg:w-[600px] rounded-lg font-redHatText">
           <div className="flex flex-col items-center gap-4 lg:p-5">
             <div className="flex flex-col items-start w-full">
               <img
-                src="/src/assets/images/icon-order-confirmed.svg"
+                src="/images/icon-order-confirmed.svg"
                 className="w-10 h-10 mb-4"
               />
               <h2 className="text-5xl font-bold text-rose900">
@@ -185,7 +182,7 @@ const Cart = () => {
             {/* Start New Order Button */}
             <button
               onClick={handleStartNewOrder}
-              className="w-full mt-4 bg-primaryClr text-white py-3 rounded-full hover:opacity-90 transition-opacity"
+              className="w-full mt-4 bg-primaryClr text-white py-3 rounded-full hover:bg-orange-700"
             >
               Start New Order
             </button>

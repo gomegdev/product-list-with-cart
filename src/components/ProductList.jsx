@@ -91,7 +91,7 @@ const ProductList = ({ desserts }) => {
                   >
                     <span>
                       <img
-                        src="/src/assets/images/icon-add-to-cart.svg"
+                        src="/images/icon-add-to-cart.svg"
                         alt="Add to cart icon"
                       />
                     </span>
@@ -105,7 +105,7 @@ const ProductList = ({ desserts }) => {
                         onClick={() => decrementItem(dessert)}
                       >
                         <img
-                          src="/src/assets/images/icon-decrement-quantity.svg"
+                          src="/images/icon-decrement-quantity.svg"
                           alt="icon decrement quantity"
                         />
                       </button>
@@ -117,7 +117,7 @@ const ProductList = ({ desserts }) => {
                         onClick={() => incrementItem(dessert)}
                       >
                         <img
-                          src="/src/assets/images/icon-increment-quantity.svg"
+                          src=" /images/icon-increment-quantity.svg"
                           alt="icon increment quantity"
                         />
                       </button>
